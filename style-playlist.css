@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(2, 0, 36, 1) 2%, rgba(193, 28, 57, 1) 47%, rgba(4, 18, 33, 1) 98%, rgba(101, 115, 151, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-right: 2%;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-bar {
+    position: sticky;
+    /* margin-top: 1%; */
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-name {
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+
+.logo-name img {
+    margin-top: 1%;
+    height: 20%;
+}
+
+.logo-name h2 {
+    color: #fff;
+}
+
+.favourites h4 {
+    margin-top: 20%;
+    color: #fff;
+}
+
+.search-bar {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: #12193e;
+    height: 30px;
+    width: 25%;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 5px 5px;
+}
+
+[type="search"] {
+    padding-left: 2%;
+    border: none;
+    width: 88%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+}
+
+.avatar-div {
+    margin-right: 2%;
+}
+
+.search-icon {
+    margin-left: 1%;
+}
+
+.notification {
+    margin-top: 1%;
+}
+
+
+/* maincontent */
+
+main {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    width: 66%;
+}
+
+.album-cover {
+    display: flex;
+    flex-direction: row;
+    background-color: #0f2e50;
+    border-radius: 5px;
+    box-shadow: 3px 3px;
+}
+
+.album-cover img {
+    height: 350px;
+    width: 35%
+}
+
+.playlist-info {
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.playlist-info h2 {
+    font-size: 3rem;
+}
+
+.playlist-info h6 {
+    float: right;
+}
+
+.play-all {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(166, 53, 84, 1) 0%, rgba(193, 28, 57, 1) 3%, rgba(101, 115, 151, 1) 79%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/* button.play-all:hover {
+    box-shadow: 2px 2px;
+    height: 17%;
+    width: 16%
+} */
+
+.follow {
+    margin-left: 25%;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 700;
+    height: 10%;
+    color: #fff;
+}
+
+
+/* .buttons-div {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.right-content {
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 27%;
+    height: 250px;
+}
+
+.similar-artists-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-content h2 {
+    text-align: start;
+    margin-left: 1%;
+    color: #fff;
+}
+
+.right-content p {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.min-card {
+    cursor: pointer;
+    margin-top: 1%;
+    height: 15%;
+    width: 15%;
+}
+
+.min-card-div {
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 1px 1px;
+}
+
+.min-card-div h3 {
+    margin-right: 45%;
+    color: #fff;
+    margin-top: 2%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.recent-list-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recent-list-heading p {
+    margin-top: 3%;
+    font-size: 0.8rem;
+}
+
+.similar-artists-heading p {
+    margin-top: 3%;
+    font-size: 0.8rem;
+}
+
+.card-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-p p {
+    margin-top: 80%;
+    font-size: 0.8rem;
+}
+
+.card-p h5 {
+    color: #fff;
+    cursor: pointer;
+}
+
+.min-card-div i {
+    color: #fff;
+    margin-top: 4%;
+    margin-right: 1%;
+}
+
+i.like:hover {
+    color: red;
+}
+
+.list-cards {
+    margin-top: 1%;
+    width: 100%;
+}
+
+.list-card-div {
+    margin-top: 0.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(2, 0, 36, 0.4);
+}
+
+.list-card-div p {
+    margin-top: 5%;
+    color: #fff;
+    margin-left: 1%
+}
+
+.list-card-div img {
+    margin-left: 4%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.list-card-div h3 {
+    margin-left: 12%;
+    color: #fff;
+}
+
+span {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.song-info {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.list-card-div i {
+    cursor: pointer;
+    color: #fff;
+    margin-top: 2%;
+}
+
+span.add-song {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.arrange {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.space-arrange {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5.1rem;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+    background-color: rgba(56, 56, 56, 1);
+}
+
+.footer-1 img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.footer-1 {
+    margin-top: 0.5%;
+    width: 19%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-1 p,
+.footer-1 h2 {
+    color: #fff
+}
+
+.controls {
+    margin-top: 1%;
+}
+
+.controls div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.controls div i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.controls input {
+    margin-top: 2%;
+    width: 25rem;
+    cursor: pointer;
+}
+
+.volume-control {
+    margin-top: 2%;
+}
+
+.footer-1 i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.volume-control input {
+    cursor: pointer;
+}
+
+.like-and-add {
+    margin-top: 2%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.controls i:hover {
+    color: #0f2e50;
+}
+
+
+/* responsive */
+
+@media (max-width: 873px) {
+    .volume-control {
+        display: none;
+    }
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 70%;
+    }
+    .left-content {
+        width: 90%;
+    }
+}
+
+@media (max-width:800px) {
+    .logo-name h2 {
+        display: none;
+    }
+    footer {
+        position: fixed;
+        display: flex;
+        bottom: 0.02vw;
+    }
+    .controls input {
+        width: 100%;
+    }
+    .footer-1 {
+        width: 40%
+    }
+    .controls {
+        width: 50%;
+    }
+}
